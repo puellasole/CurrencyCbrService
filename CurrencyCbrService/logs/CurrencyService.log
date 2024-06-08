@@ -1,0 +1,18 @@
+2024-06-08T16:37:01.829+02:00  INFO 91860 --- [main] r.d.C.CurrencyCbrServiceApplication      : Starting CurrencyCbrServiceApplication using Java 17.0.1 with PID 91860 (C:\Users\79114\Downloads\CurrencyCbrService\CurrencyCbrService\target\classes started by Daria Arias in C:\Users\79114\Downloads\CurrencyCbrService\CurrencyCbrService)
+2024-06-08T16:37:01.839+02:00  INFO 91860 --- [main] r.d.C.CurrencyCbrServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-08T16:37:03.194+02:00  INFO 91860 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e369e788-aab6-3936-bf41-aeeaaa5e0e06
+2024-06-08T16:37:03.621+02:00  INFO 91860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-08T16:37:03.638+02:00  INFO 91860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-08T16:37:03.639+02:00  INFO 91860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-08T16:37:03.743+02:00  INFO 91860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-08T16:37:03.744+02:00  INFO 91860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1796 ms
+2024-06-08T16:37:05.158+02:00  INFO 91860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-08T16:37:05.252+02:00  INFO 91860 --- [main] r.d.C.CurrencyCbrServiceApplication      : Started CurrencyCbrServiceApplication in 4.132 seconds (process running for 4.618)
+2024-06-08T16:37:10.234+02:00  INFO 91860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08T16:37:10.235+02:00  INFO 91860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-08T16:37:10.239+02:00  INFO 91860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-08T16:37:10.306+02:00  INFO 91860 --- [http-nio-8080-exec-1] r.d.C.service.RateService                : Getting rate for AZN.
+2024-06-08T16:37:10.351+02:00  INFO 91860 --- [http-nio-8080-exec-1] r.d.C.service.RatesGettingService        : Getting rates from CBR.
+2024-06-08T16:37:10.362+02:00 DEBUG 91860 --- [http-nio-8080-exec-1] r.d.C.cbrclient.CbrClient                : [CbrClient#getRatesByCbr] ---> GET https://cbr.ru/scripts/XML_daily.asp HTTP/1.1
+2024-06-08T16:37:10.791+02:00 DEBUG 91860 --- [http-nio-8080-exec-1] r.d.C.cbrclient.CbrClient                : [CbrClient#getRatesByCbr] <--- HTTP/1.1 200 OK (428ms)
+2024-06-08T16:37:12.384+02:00  INFO 91860 --- [http-nio-8080-exec-2] r.d.C.service.RateService                : Getting rate for AZN.

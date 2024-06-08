@@ -1,0 +1,21 @@
+server:
+   port: 8080
+
+cbr:
+   url: "https://cbr.ru/scripts/XML_daily.asp"
+   
+app:
+   rest:
+      api:
+         prefix: /rates
+
+spring:
+  cache:
+    caffeine:
+      spec: maximumSize=3,expireAfterAccess=24h
+      
+logging:
+  level:
+    ru.dasha.CurrencyCbrService.cbrclient : DEBUG
+  file:
+    name: logs/CurrencyService.log
